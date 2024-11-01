@@ -1,11 +1,13 @@
 // App.js
 import React, {useState} from 'react';
 import {Button, StyleSheet, Text, TextInput, View} from 'react-native';
-import Exstyle from './style.js'; // Make sure the path is correct
-import Forms from './Components/Forms.js';
-import ArrayFlatList from './Components/List/ArrayFlatList.jsx';
-import DynamicGrid from './Components/List/DynamicGrid.jsx';
-import ComponentLoopwithFlatList from './Components/List/ComponentLoopwithFlatList.jsx';
+import CreateStackNavigation from './Components/Navigation/CreateStackNavigation';
+import CreateTabNavigation from './Components/Navigation/CreateTabNavigation';
+import BasicApiCall from './Components/ApiCalls/BasicApiCall';
+import ApicallwithFlatList from './Components/ApiCalls/ApicallwithFlatList';
+import CreateAsyncStorage from './Components/CreateAsyncStorage';
+import Products from './React-redux/React/Products';
+import Home from './React-redux/React/Home';
 
 // const App = () => {
 //   const buttonPress = () => {
@@ -63,12 +65,7 @@ import ComponentLoopwithFlatList from './Components/List/ComponentLoopwithFlatLi
 // });
 
 const App = () => {
-  return (
-    <View>
-      {/* <Forms /> */}
-      <ComponentLoopwithFlatList />
-    </View>
-  );
+  return <Home />;
 };
 
 export default App;
