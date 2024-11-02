@@ -19,10 +19,21 @@ const ApicallwithFlatList = () => {
 
       {list?.length > 0 && (
         <FlatList
+          // numColumns={2}
+          inverted
+          horizontal
+          showsHorizontalScrollIndicator={false}
           data={list}
           keyExtractor={item => item.id}
           renderItem={({item}) => (
-            <View style={{flex: 1}}>
+            <View
+              style={{
+                flex: 1,
+                borderColor: '#000',
+                borderWidth: 1,
+                padding: 10,
+                margin: 10,
+              }}>
               <Text> id : {item.id}</Text>
               <Text> body : {item.body}</Text>
             </View>
