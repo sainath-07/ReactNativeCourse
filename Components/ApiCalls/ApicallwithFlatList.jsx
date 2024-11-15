@@ -20,8 +20,8 @@ const ApicallwithFlatList = () => {
       {list?.length > 0 && (
         <FlatList
           // numColumns={2}
-          inverted
-          horizontal
+          // inverted
+          // horizontal
           showsHorizontalScrollIndicator={false}
           data={list}
           keyExtractor={item => item.id}

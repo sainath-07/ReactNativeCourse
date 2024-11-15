@@ -2,11 +2,9 @@
 import React, {useState} from 'react';
 import {Button, StyleSheet, Text, TextInput, View} from 'react-native';
 
-import ComponentLoopwithFlatList from './Components/List/ComponentLoopwithFlatList';
-import ArrayFlatList from './Components/List/ArrayFlatList';
-import CreateDrawer from './Components/Navigation/CreateDrawer';
-import CreatingSectionList from './Components/List/SectionList';
-import ApicallwithFlatList from './Components/ApiCalls/ApicallwithFlatList';
+import ResponsiveUiwithoutFlex from './Components/ResponsiveUiwithoutFlex';
+import SingleAndMultipleSelectWithFlatList from './Components/List/SingleAndMultipleSelectWithFlatList';
+import AddGIF from './Components/AddGIF';
 
 // const App = () => {
 //   const buttonPress = () => {
@@ -64,7 +62,7 @@ import ApicallwithFlatList from './Components/ApiCalls/ApicallwithFlatList';
 // });
 
 const App = () => {
-  return <ApicallwithFlatList />;
+  return <AddGIF />;
 };
 
 export default App;
